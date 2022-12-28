@@ -39,6 +39,11 @@ $--color-warning: #E6A23C !default;
 $--color-danger: #d82c0d !default;
 /// color|1|Functional Color|1
 $--color-info: #909399 !default;
+// Shopify interactive color
+$--color-p-interactive: #2c6ecb !default;
+$--color-p-interactive-on-dark: #36a3ff !default;
+$--color-p-focused: #458fff !default;
+
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -59,7 +64,9 @@ $--color-text-secondary: #909399 !default;
 $--color-text-placeholder: #C0C4CC !default;
 /// color|1|Border Color|3
 $--border-color-base: #DCDFE6 !default;
-$--border-color-subdued: #BABFC3 !default;
+$--border-p-color-subdued: #BABFC3 !default;
+$--border-p-color-gray: #8c9196 !default;
+$--border-p-color-on-dark: #505356 !default;
 /// color|1|Border Color|3
 $--border-color-light: #E4E7ED !default;
 /// color|1|Border Color|3
@@ -79,6 +86,7 @@ $--link-hover-color: $--color-primary !default;
 /* Border
 -------------------------- */
 $--border-width-base: 1px !default;
+$--border-width-medium: 2px !default;
 $--border-style-base: solid !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
@@ -157,13 +165,13 @@ $--checkbox-font-size: 14px !default;
 $--checkbox-font-weight: $--font-weight-primary !default;
 /// color||Color|0
 $--checkbox-font-color: $--color-text-regular !default;
-$--checkbox-input-height: 14px !default;
-$--checkbox-input-width: 14px !default;
+$--checkbox-input-height: 18px !default;
+$--checkbox-input-width: 18px !default;
 /// borderRadius||Border|2
-$--checkbox-border-radius: $--border-radius-small !default;
+$--checkbox-border-radius: $--border-radius-base !default;
 /// color||Color|0
 $--checkbox-background-color: $--color-white !default;
-$--checkbox-input-border: $--border-base !default;
+$--checkbox-input-border: $--border-width-medium $--border-style-base $--border-p-color-gray !default;
 
 /// color||Color|0
 $--checkbox-disabled-border-color: $--border-color-base !default;
@@ -175,13 +183,13 @@ $--checkbox-disabled-checked-input-border-color: $--border-color-base !default;
 $--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
 
 /// color||Color|0
-$--checkbox-checked-font-color: $--color-primary !default;
-$--checkbox-checked-input-border-color: $--color-primary !default;
+$--checkbox-checked-font-color: $--color-black !default;
+$--checkbox-checked-input-border-color: $--color-p-interactive !default;
 /// color||Color|0
-$--checkbox-checked-background-color: $--color-primary !default;
+$--checkbox-checked-background-color: $--color-p-interactive !default;
 $--checkbox-checked-icon-color: $--fill-base !default;
 
-$--checkbox-input-border-color-hover: $--color-primary !default;
+$--checkbox-input-border-color-hover: $--color-p-interactive-on-dark !default;
 /// height||Other|4
 $--checkbox-bordered-height: 40px !default;
 /// padding||Spacing|3
@@ -206,11 +214,11 @@ $--checkbox-bordered-mini-input-width: 12px !default;
 $--checkbox-bordered-mini-height: 28px !default;
 
 /// color||Color|0
-$--checkbox-button-checked-background-color: $--color-primary !default;
+$--checkbox-button-checked-background-color: $--color-p-interactive !default;
 /// color||Color|0
 $--checkbox-button-checked-font-color: $--color-white !default;
 /// color||Color|0
-$--checkbox-button-checked-border-color: $--color-primary !default;
+$--checkbox-button-checked-border-color: $--border-color-base !default;
 
 
 
@@ -548,7 +556,7 @@ $--button-default-font-color: $--color-text-primary !default;
 /// color||Color|0
 $--button-default-background-color: $--color-white !default;
 /// color||Color|0
-$--button-default-border-color: $--border-color-subdued !default;
+$--button-default-border-color: $--border-p-color-subdued !default;
 
 /// color||Color|0
 $--button-disabled-font-color: $--color-text-placeholder !default;

@@ -23,7 +23,7 @@
     height: $--checkbox-bordered-height;
 
     &.is-checked {
-      border-color: $--color-primary;
+      border-color: $--color-p-interactive;
     }
 
     &.is-disabled {
@@ -48,6 +48,12 @@
       .el-checkbox__inner {
         height: $--checkbox-bordered-medium-input-height;
         width: $--checkbox-bordered-medium-input-width;
+        &::after {
+            height: 6px;
+            width: 3px;
+            left: 3px;
+            top: 0;
+        }
       }
     }
 
@@ -66,8 +72,10 @@
         width: $--checkbox-bordered-small-input-width;
 
         &::after {
-          height: 6px;
+          height: 5px;
           width: 2px;
+          left: 2px;
+          top: 0;
         }
       }
     }
@@ -176,8 +184,8 @@
           position: absolute;
           display: block;
           background-color: $--checkbox-checked-icon-color;
-          height: 2px;
-          transform: scale(0.5);
+          height: 4px;
+          transform: scale(0.7);
           left: 0;
           right: 0;
           top: 5px;
@@ -201,7 +209,6 @@
     z-index: $--index-normal;
     transition: border-color .25s cubic-bezier(.71,-.46,.29,1.46),
     background-color .25s cubic-bezier(.71,-.46,.29,1.46);
-
     &:hover {
       border-color: $--checkbox-input-border-color-hover;
     }
@@ -209,11 +216,11 @@
     &::after {
       box-sizing: content-box;
       content: "";
-      border: 1px solid $--checkbox-checked-icon-color;
+      border: 2px solid $--checkbox-checked-icon-color;
       border-left: 0;
       border-top: 0;
-      height: 7px;
-      left: 4px;
+      height: 8px;
+      left: 5px;
       position: absolute;
       top: 1px;
       transform: rotate(45deg) scaleY(0);
@@ -272,7 +279,7 @@
     @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, 0);
 
     &:hover {
-      color: $--color-primary;
+      color: $--color-p-interactive;
     }
 
     & [class*="el-icon-"] {
@@ -297,7 +304,7 @@
       color: $--checkbox-button-checked-font-color;
       background-color: $--checkbox-button-checked-background-color;
       border-color: $--checkbox-button-checked-border-color;
-      box-shadow: -1px 0 0 0 $--color-primary-light-4;
+      box-shadow: -1px 0 0 0 $--color-p-interactive-on-dark;
     }
     &:first-child .el-checkbox-button__inner {
       border-left-color: $--checkbox-button-checked-border-color;
