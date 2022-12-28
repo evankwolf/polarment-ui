@@ -1,7 +1,7 @@
 {
   "name": "polarment-ui",
   "version": "2.15.12",
-  "description": "A Component Library for Vue.js. Based On Shopify Design",
+  "description": "A Component Library for Vue.js Based On Shopify Design.",
   "main": "lib/polarment-ui.common.js",
   "files": [
     "lib",

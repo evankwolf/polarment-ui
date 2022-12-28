@@ -110,30 +110,34 @@
 
     @include when(light) {
       background: $--tooltip-color;
-      border: 1px solid $--tooltip-fill;
-
+      border: 1px solid transparent;
+      box-shadow: $--tooltip-shadow;
       &[x-placement^="top"] .popper__arrow {
-        border-top-color: $--tooltip-fill;
+        border-top-color: $--tooltip-fill-light;
         &::after {
           border-top-color: $--tooltip-color;
+          box-shadow: $--tooltip-shadow;
         }
       }
       &[x-placement^="bottom"] .popper__arrow {
-        border-bottom-color: $--tooltip-fill;
+        border-bottom-color: $--tooltip-fill-light;
         &::after {
           border-bottom-color: $--tooltip-color;
+          box-shadow: $--tooltip-shadow;
         }
       }
       &[x-placement^="left"] .popper__arrow {
-        border-left-color: $--tooltip-fill;
+        border-left-color: $--tooltip-fill-light;
         &::after {
           border-left-color: $--tooltip-color;
+          box-shadow: $--tooltip-shadow;
         }
       }
       &[x-placement^="right"] .popper__arrow {
-        border-right-color: $--tooltip-fill;
+        border-right-color: $--tooltip-fill-light;
         &::after {
           border-right-color: $--tooltip-color;
+          box-shadow: $--tooltip-shadow;
         }
       }
     }
