@@ -65,7 +65,8 @@ $--color-text-placeholder: #C0C4CC !default;
 /// color|1|Border Color|3
 $--border-color-base: #DCDFE6 !default;
 $--border-p-color-subdued: #BABFC3 !default;
-$--border-p-color-gray: #8c9196 !default;
+$--border-p-color-light-gray: #999EA4 !default;
+$--border-p-color-gray: #8C9196 !default;
 $--border-p-color-on-dark: #505356 !default;
 /// color|1|Border Color|3
 $--border-color-light: #E4E7ED !default;
@@ -90,6 +91,7 @@ $--border-width-medium: 2px !default;
 $--border-style-base: solid !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-medium: $--border-width-medium $--border-style-base $--border-color-base !default;
 /// borderRadius|1|Radius|0
 $--border-radius-base: 4px !default;
 /// borderRadius|1|Radius|0
@@ -230,15 +232,15 @@ $--radio-font-size: $--font-size-base !default;
 $--radio-font-weight: $--font-weight-primary !default;
 /// color||Color|0
 $--radio-font-color: $--color-text-regular !default;
-$--radio-input-height: 14px !default;
-$--radio-input-width: 14px !default;
+$--radio-input-height: 18px !default;
+$--radio-input-width: 18px !default;
 /// borderRadius||Border|2
 $--radio-input-border-radius: $--border-radius-circle !default;
 /// color||Color|0
 $--radio-input-background-color: $--color-white !default;
-$--radio-input-border: $--border-base !default;
+$--radio-input-border: $--border-medium !default;
 /// color||Color|0
-$--radio-input-border-color: $--border-color-base !default;
+$--radio-input-border-color: $--border-p-color-light-gray !default;
 /// color||Color|0
 $--radio-icon-color: $--color-white !default;
 
@@ -251,15 +253,15 @@ $--radio-disabled-checked-input-fill: $--disabled-fill-base !default;
 $--radio-disabled-checked-icon-color: $--color-text-placeholder !default;
 
 /// color||Color|0
-$--radio-checked-font-color: $--color-primary !default;
+$--radio-checked-font-color: $--color-p-interactive !default;
 /// color||Color|0
-$--radio-checked-input-border-color: $--color-primary !default;
+$--radio-checked-input-border-color: $--color-p-interactive !default;
 /// color||Color|0
 $--radio-checked-input-background-color: $--color-white !default;
 /// color||Color|0
 $--radio-checked-icon-color: $--color-primary !default;
 
-$--radio-input-border-color-hover: $--color-primary !default;
+$--radio-input-border-color-hover: $--color-p-interactive !default;
 
 $--radio-bordered-height: 40px !default;
 $--radio-bordered-padding: 12px 20px 0 10px !default;
@@ -279,11 +281,11 @@ $--radio-bordered-mini-height: 28px !default;
 /// fontSize||Font|1
 $--radio-button-font-size: $--font-size-base !default;
 /// color||Color|0
-$--radio-button-checked-background-color: $--color-primary !default;
+$--radio-button-checked-background-color: $--color-p-interactive !default;
 /// color||Color|0
 $--radio-button-checked-font-color: $--color-white !default;
 /// color||Color|0
-$--radio-button-checked-border-color: $--color-primary !default;
+$--radio-button-checked-border-color: $--color-p-interactive !default;
 $--radio-button-disabled-checked-fill: $--border-color-extra-light !default;
 
 /* Select
