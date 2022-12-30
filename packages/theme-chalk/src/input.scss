@@ -21,7 +21,7 @@
     background-image: none;
     border: $--input-border;
     border-radius: $--input-border-radius;
-    transition: $--border-transition-base;
+    transition: $--input-transition;
 
     &::placeholder {
       color: $--input-placeholder-color;
@@ -34,6 +34,7 @@
     &:focus {
       outline: none;
       border-color: $--input-focus-border;
+      box-shadow: $--input-focus-box-shadow;
     }
   }
 
@@ -117,7 +118,7 @@
     line-height: $--input-height;
     outline: none;
     padding: 0 15px;
-    transition: $--border-transition-base;
+    transition: $--input-transition;
     width: 100%;
 
     &::-ms-reveal {
@@ -133,8 +134,12 @@
     }
 
     &:focus {
-      outline: none;
-      border-color: $--input-focus-border;
+      outline-offset: 1px;
+      // border-color: $--input-focus-border;
+      // outline: $--input-focus-outline;
+
+      /* box-shadow transition performs better than outline */
+      box-shadow: $--input-focus-box-shadow;
     }
   }
 
