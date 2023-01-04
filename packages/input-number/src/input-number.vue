@@ -11,20 +11,22 @@
     <span
       class="el-input-number__decrease"
       role="button"
+      tabindex="-1"
       v-if="controls"
       v-repeat-click="decrease"
       :class="{'is-disabled': minDisabled}"
       @keydown.enter="decrease">
-      <i :class="`el-icon-${controlsAtRight ? 'arrow-down' : 'minus'}`"></i>
+      <i :class="`el-icon-${controlsAtRight ? 'caret-bottom' : 'minus'}`"></i>
     </span>
     <span
       class="el-input-number__increase"
       role="button"
+      tabindex="-1"
       v-if="controls"
       v-repeat-click="increase"
       :class="{'is-disabled': maxDisabled}"
       @keydown.enter="increase">
-      <i :class="`el-icon-${controlsAtRight ? 'arrow-up' : 'plus'}`"></i>
+      <i :class="`el-icon-${controlsAtRight ? 'caret-top' : 'plus'}`"></i>
     </span>
     <el-input
       ref="input"
